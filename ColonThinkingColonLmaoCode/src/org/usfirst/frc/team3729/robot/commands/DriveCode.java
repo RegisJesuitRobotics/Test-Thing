@@ -16,10 +16,10 @@ public class DriveCode {
 	double oversample, timeBetweenPresses;
 
 	public DriveCode(controller playStation) {
-		L1 = new CANTalon(1);
-		L2 = new CANTalon(3);
-		R1 = new CANTalon(2);
-		R2 = new CANTalon(4);
+		L1 = new CANTalon(0);
+		L2 = new CANTalon(1);
+		R1 = new CANTalon(3);
+		R2 = new CANTalon(2);
 		// CHECK THESE CANTALONS FOR PORTS
 
 		playStation = new controller(0);
@@ -81,5 +81,7 @@ public class DriveCode {
 		}
 
 	}
+
+	// AUTOnOMOUS COMMANDS
 
 }
